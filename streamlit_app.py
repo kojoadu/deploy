@@ -17,4 +17,4 @@ total_sales_product = formatIndex(total_sales_product)
 st.dataframe(total_sales_product.head(5))
 
 fig = px.bar(total_sales_product, x='Product Name', y='Sales', color='Product Name')
-st.plotly_chart(fig)
+st.plotly_chart(fig, use_container_width=True)
